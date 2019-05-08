@@ -17,4 +17,6 @@ node('master') {
             archiveArtifacts 'bobcat/target/**'
         }
     }
+    stage('Post Build') {
+        build job: 'testfreestyle1'
 }
