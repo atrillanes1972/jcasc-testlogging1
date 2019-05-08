@@ -19,4 +19,5 @@ node('master') {
     }
     stage('Post Build') {
         build job: 'testfreestyle1'
+    }
 }
