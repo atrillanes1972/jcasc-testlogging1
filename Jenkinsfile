@@ -14,8 +14,7 @@ node('master') {
             }
         } finally {
             junit testResults: 'bobcat/target/*.xml', allowEmptyResults: true
-            archiveArtifacts 'bobcat/target/**'
-        }
+            }
     }
     stage('Post Build') {
         build job: 'testfreestyle1'
